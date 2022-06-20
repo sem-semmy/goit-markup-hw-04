@@ -1,0 +1,334 @@
+:root {
+  --main-text-color: #757575;
+  --additional-text-color: #212121;
+  --accent-color: #2196f3;
+  --white: #ffffff;
+  --card-gap: 30px;
+  --card-item: 3;
+}
+/* font-family: 'Raleway', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+body,
+html {
+  font-family: "Roboto";
+  background-color: #ffffff;
+  color: var(--main-text-color);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  min-width: 100px;
+  height: auto;
+}
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--card-gap);
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.logo-akcent {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.logo-white {
+  color: var(--white);
+  margin-bottom: 20px;
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  gap: var(--card-gap);
+}
+
+.contact-list {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--card-gap);
+}
+/* .contact {
+  display: flex;
+} */
+.benefits-list {
+  display: flex;
+  justify-content: space-between;
+  /* margin-bottom: 94px; */
+}
+.section {
+  padding: 94px 0;
+}
+.benefits-item {
+  width: 270px;
+  /* height: 101px; */
+}
+.nav-link,
+.contact-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  color: var(--additional-text-color);
+}
+.active {
+  color: var(--accent-color);
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.contact-link:hover,
+.contact-link:focus,
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
+}
+.button:hover,
+.button:focus {
+  background-color: #188ce8;
+  color: #ffffff;
+}
+
+.filter-btn {
+  border: none;
+  background-color: #f5f4fa;
+  color: #000000;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 6px 22px;
+  margin-left: 8px;
+}
+/* .filter-btn-active {
+  border: none;
+  background-color: var(--accent-color);
+  color: var(--white);
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 6px 22px;
+} */
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--accent-color);
+  border: none;
+  color: var(--white);
+}
+.contact-link {
+  color: var(--main-text-color);
+}
+.hero {
+  background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 280px;
+  /* margin-bottom: 94px; */
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 30px;
+}
+.filter-nav {
+  margin-bottom: 50px;
+}
+.filter {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--additional-text-color);
+  display: flex;
+  justify-content: center;
+  margin-left: 8px;
+}
+.button {
+  background-color: var(--accent-color);
+  color: var(--white);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  border: 0;
+  margin: 0 auto;
+  padding: 10px 32px;
+  display: flex;
+}
+.benefits-list .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--additional-text-color);
+}
+.benefits-list .text {
+  /* font-weight: 400; */
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+/* заголовки першої сторінки */
+.team {
+  background-color: #f5f4fa;
+  /* padding: 94px 0; */
+}
+.description-list {
+  justify-content: center;
+}
+.description {
+  /* margin-bottom: 80px; */
+  padding-top: 0;
+}
+.description-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--additional-text-color);
+  /* margin-top: 94px; */
+  margin-bottom: 50px;
+}
+.team-list {
+  justify-content: center;
+}
+.team-text {
+  background-color: #ffffff;
+  width: 270px;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--additional-text-color);
+}
+.team-member-decription {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+.portfolio {
+  justify-content: center;
+}
+.portfolio-text {
+  background-color: #ffffff;
+  width: 370px;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  border-top: none;
+}
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--additional-text-color);
+  margin-bottom: 4px;
+}
+.portfolio-subtitle {
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+.footer-link {
+  color: var(--white);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.link-transparency {
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 9px;
+}
+.footer {
+  background-color: #2f303a;
+  text-decoration: none;
+  padding: 60px 0;
+}
+.no-display {
+  display: none;
+}
