@@ -7,33 +7,37 @@
     <title>Document</title>
     <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <link rel="stylesheet" href="css/styles.css" />
+       <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   </head>
   <body>
         <header class="header">
-      <div class="header-container">
+ <div class="header-container">
       <nav class="nav">
         <a class="logo" href="#"><span class="logo-akcent">Web</span>Studio</a>
         <ul class="nav-list list ">
-          <li><a class="nav-link " href="./index.html">Студия</a></li>
-          <li><a class="nav-link active" href="./portfolio.html">Портфолио</a></li>
+          <li><a class="nav-link active" href="./index.html">Студия</a></li>
+          <li><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
           <li><a class="nav-link" href="">Контакты</a></li>
         </ul>
       </nav>
       <ul class="contact-list">
-        <li> <a class="contact-link" href=mailto:info@devstudio.com"
-          >info@devstudio.com</a>  
-          <!-- <svg class="benefits-icon" width="30" height="30">
-                  <use href="./images/icons.svg#icon-benefit_3"></use>
-                </svg> -->
+        <li class="contact-item"> 
+          <a class="contact-link" href=mailto:info@devstudio.com"
+          > <svg class="contact-icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope-hover"></use>
+                </svg>
+          info@devstudio.com</a>  
               </li>
-        <li><a class="contact-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li class="contact-item">
+                 <a class="contact-link" href="tel:+380961111111">  <svg class="contact-icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg> +38 096 111 11 11</a>
+        </li>
       </ul>
       </div>
-    </header>
-
     <main>
       <section class="section ">
         <div class="container">
@@ -141,10 +145,12 @@
         </div>
       </section>
     </main>
-        <footer class="footer">
-      <div class="container">
+  <section class="footer">
+    <footer class="container footer-all">
+      <div >
       <a class="logo logo-white" href="#"><span class="logo-akcent">Web</span>Studio</a>
       <address>
+
         <ul >
           <li>
             <a
@@ -158,7 +164,33 @@
         </ul>
       </address>
       </div>
+      <div class="footer-soc">
+        <h2 class="footer-soc-title"> присоединяйтесь</h2>
+       <ul class="team-soc-list">
+              <li class="team-soc-item"><a href="" class="team-soc-link">
+                <svg class="team-soc-icon icon-white" width="20" height="20">
+                  <use href="./images/icons.svg#icon-team_logo_1"></use>
+                </svg>
+              </a></li>
+              <li class="team-soc-item"><a href="" class="team-soc-link">
+                 <svg class="team-soc-icon icon-white" width="20" height="20">
+                  <use href="./images/icons.svg#icon-team_logo_2"></use>
+                </svg>
+              </a></li>
+              <li class="team-soc-item"><a href="" class="team-soc-link">
+                 <svg class="team-soc-icon icon-white" width="20" height="20">
+                  <use href="./images/icons.svg#icon-team_logo_3"></use>
+                </svg>
+              </a></li>
+              <li class="team-soc-item"><a href="" class="team-soc-link">
+                 <svg class="team-soc-icon icon-white" width="20" height="20">
+                  <use href="./images/icons.svg#icon-team_logo_4"></use>
+                </svg>
+              </a></li>
+             </ul>
+      </div>
     </footer>
+    </section>
   </body>
 </html>
 
