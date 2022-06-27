@@ -214,7 +214,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   /* background-color: #2f303a; */
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_photo.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
   padding: 200px 0;
   background-repeat: no-repeat;
   background-position: center;
