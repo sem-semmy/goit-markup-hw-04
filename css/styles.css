@@ -2,6 +2,7 @@
   --main-text-color: #757575;
   --additional-text-color: #212121;
   --accent-color: #2196f3;
+  --additional-background: #f5f4fa;
   --white: #ffffff;
   --card-gap: 30px;
   --card-item: 3;
@@ -179,13 +180,15 @@ img {
 }
 .filter-btn {
   border: none;
-  background-color: #f5f4fa;
+  background-color: var(--additional-background);
   color: #000000;
   border-radius: 4px;
   font-size: 16px;
+  line-height: 1.62;
   padding: 6px 22px;
 }
-.filter-btn:hover {
+.filter-btn:hover,
+.filter-btn:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .filter-item:not(:last-child) {
@@ -257,7 +260,7 @@ img {
 .benefits-background {
   width: 270px;
   height: 120px;
-  background-color: #f5f4fa;
+  background-color: var(--additional-background);
   margin-bottom: 30px;
   display: flex;
   align-items: center;
@@ -287,7 +290,7 @@ img {
 }
 /* заголовки першої сторінки */
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--additional-background);
   /* padding: 94px 0; */
 }
 .description-list {
@@ -357,10 +360,12 @@ img {
 .team-soc-icon {
   fill: #afb1b8;
 }
-.team-soc-link:hover {
+.team-soc-link:hover,
+.team-soc-link:focus {
   background-color: #2196f3;
 }
-.team-soc-link:hover .team-soc-icon {
+.team-soc-link:hover .team-soc-icon,
+.team-soc-link:focus .team-soc-icon {
   fill: #fff;
 }
 .client-link {
@@ -383,7 +388,7 @@ img {
 .client-item + .client-item {
   margin-left: 30px;
 }
-.client-item {
+.client-link {
   width: 170px;
   /* padding: 16px 32px; */
   height: 92px;
@@ -394,23 +399,29 @@ img {
   align-items: center;
   justify-content: center;
 }
-.client-item:hover {
+.client-link:hover,
+.client-link:focus {
   border: 1px solid #2196f3;
 }
-.client-item:hover .client-icon {
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
   fill: #2196f3;
 }
-.portfolio-item {
+/* .client-icon:focus .portfolio-item {
   width: 370px;
   box-sizing: border-box;
+} */
+.portfolio-link {
+  display: block;
 }
-.portfolio-item:hover {
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-text {
   background-color: #ffffff;
   padding: 20px 24px;
-  /* display: flex;
+  /* display: flex;     
   flex-direction: column; */
   border: 1px solid #eeeeee;
   border-top: none;
@@ -446,7 +457,7 @@ img {
 .footer-soc {
   /* display: flex; */
   margin-left: 70px;
-  margin-top: 12px;
+  /* margin-top: 12px; */
 }
 .footer-soc-title {
   font-family: "Roboto";
